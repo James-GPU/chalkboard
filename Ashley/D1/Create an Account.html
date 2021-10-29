@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+  Name: Ashley Simons 
+  Date: 10.22.2021
+  Course: CS 355
+
+  This is the create an account page of chalkboard. The user will be sent here from the login page if they click the option to make an account. On this page the user will enter all their personal information to make an account. Then they can either click the submit button to move forward, so the reset button to clear the information they entered and start again. If they click Chalkboard at the top of the page it will bring them back to the login page. 
+
+  References: Linkedin Learning and Zybooks assigments from CS355
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+-->
+
+<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="355FinalProjectCss.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h1 style=text-align:center>Chalkboard</h1>
+  <h2 style=text-align:center>Create an Account</h2>
+
+  <form>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td>
+          <input type="text" placeholder="Name" name="John Smith">
+        </td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td><input type="phone" placeholder="###-###-####"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td>
+          <input type="email" placeholder="youremail@domain.com">
+        </td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td>
+          <input type="password" placeholder="Password">
+        </td>
+      </tr>
+      <tr>
+        <td>Confirm Password:</td>
+        <td>
+          <input type="password" placeholder="Confirm Password">
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Female
+          <input type="radio" name="gender">Other
+        </td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>Security Question #1</td>
+        <td>
+          <select>
+            <option>What is your mother's maiden name?</option>
+            <option>What is your father's midde name?</option>
+            <option>What is your favortie color?</option>
+            <option>What city were you born in?</option>
+            <option>What city do your grandparent live in?</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Answer:</td>
+        <td>
+          <input type="securityQuestion">
+        </td>
+      </tr>
+      <tr>
+        <td>Security Question #2</td>
+        <td>
+          <select>
+            <option>What is your mother's maiden name?</option>
+            <option>What is your father's midde name?</option>
+            <option>What is your favortie color?</option>
+            <option>What city were you born in?</option>
+            <option>What city do your grandparent live in?</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Answer:</td>
+        <td>
+          <input type="securityQuestion">
+        </td>
+      </tr>
+      <tr>
+        <td>Security Question #3</td>
+        <td>
+          <select>
+            <option>What is your mother's maiden name?</option>
+            <option>What is your father's midde name?</option>
+            <option>What is your favortie color?</option>
+            <option>What city were you born in?</option>
+            <option>What city do your grandparent live in?</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Answer:</td>
+        <td>
+          <input type="securityQuestion">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Address:
+        </td>
+        <td>
+          <textarea rows="5" col="17" placeholder="Address"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

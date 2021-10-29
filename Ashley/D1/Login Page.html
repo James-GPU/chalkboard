@@ -1,0 +1,47 @@
+<!--
+  Name: Ashley Simons 
+  Date: 10.22.2021
+  Course: CS 355
+
+  This is the login page of our Chalkboard. Here the user can enter their email and password, then click login to enter the homepage. If they forgot their username or password they click the forgot username/password option. This will bring them to a new page to reset their username or password. If the user is a first time user, they can have the option to make an account and they will be brought to a new page. If they click Chalkboard at the top of the page it will not do anything.  
+
+  References: Linkedin Learning and Zybooks assigments from CS355
+-->
+
+<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="355FinalProjectCss.css">
+  <title>Login Page</title>
+</head>
+
+<body>
+  <h1 style=text-align:center>Chalkboard</h1>
+  <h2 style=text-align:center>Login</h2>
+  <div class="wrapper">
+    <p></p>
+    <form>
+      <div class="email">
+        <div class="enterEmail">
+          <td>Email: </td>
+          <input type="email" placeholder="youremail@domain.com">
+        </div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <td>Password:</td>
+          <input type="password" placeholder="Password">
+        </div>
+
+      </div>
+      <div class="forgotUsernamePassword"><a href="">Forgot username/password?</a></div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt">Make an account <a href="">here</a></div>
+  </div>
+</body>
+
+</html>
