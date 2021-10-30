@@ -1,4 +1,4 @@
-1.https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/
+1.https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html
 2.Ashley Simons and James Ng
 3.Roles to be determined
 4.To be determined
