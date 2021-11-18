@@ -12,8 +12,9 @@
 <link href="styles.css" rel="stylesheet" type="text/css"/>
 <script src="button.js"></script>
 <body>    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html"><img src = "Images/chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
+    <div class = "content">
+        <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html"><img src = "./chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
+    <a id = "Logout" href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
     <input id="myAccount" type="button" value="My Account">
     <h2> Create a course </h2>
     <form>
@@ -23,10 +24,13 @@
         <input id="CourseNumber" type="text"><br>
         
         <label>Set of instructors:</label>
-        <textarea id="Setinstructor" name = "Setinstructor" rows = "4" cols = "50" type="text" placeholder="Add professor's name here"></textarea>
-        <input id="addinstructor" type="button" value="Add Instructor"  > <!--Don't need an add instructor page if you have one here-->
-        <input id="removeinstructor" type="button" value="Remove Instructor">
+        <textarea id="Setinstructor" name = "Setinstructor" rows = "4" cols = "50" type="text" placeholder="Add professor's name here"></textarea><br>
+        <div class ="buttons">
+            <input id="addinstructor" type="button" value="Add Instructor"  > <!--Don't need an add instructor page if you have one here-->
+        <input id="removeinstructor" type="button" value="Remove Instructor"><br>
         <br>
+        </div>
+        
         
         <label>Roster of Students:</label>
         <input id="roster" type="text"><br>
@@ -37,6 +41,6 @@
         <label>Sequence of Lessons:</label>
         <input id="sequenceLesson" type="text"><br>
     </form>
-   
+    </div> 
 </body>
 </html

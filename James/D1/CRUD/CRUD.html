@@ -12,18 +12,24 @@
 <link href="styles.css" rel="stylesheet" type="text/css"/>
 <script src="button.js"></script>
 <body>
-  <form>
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/InstructorHome.html"><img src = "Images/chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
-    <input id="myAccount" type="button" value="My Account"> 
-  </form>
-  <h2> Chalkboard</h2>
-  <form> 
-    <input id="createButton" type="button" value="Create a course"><br>
-    <input id="deleteButton" type="button" value="Delete a course"><br>
-    <!--<input id="addButton" type="button" value="Add Instructor"><br>-->
-    <input id="removeButton" type="button" value="Remove Instructor"><br>
-    <input id="leaveButton" type="button" value="Leave Course"><br>
-  </form>
+  <div class = "content">
+    <form>
+      <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/index.html"><img src = "./chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
+      <a id = "Logout" href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
+      <input id="myAccount" type="button" value="My Account"> 
+    </form>
+    <!-- make button width smaller-->
+    <div class = "buttons">
+      <h2> Chalkboard</h2>
+      <form> 
+        <input id="createButton" type="button" value="Create a course"><br><br>
+        <input id="deleteButton" type="button" value="Delete a course"><br><br>
+        <!--<input id="addButton" type="button" value="Add Instructor"><br>-->
+        <input id="removeButton" type="button" value="Remove Instructor"><br><br>
+        <input id="leaveButton" type="button" value="Leave Course"><br><br>
+      </form>
+    </div>
+  </div>
+  
 </body>
 </html
