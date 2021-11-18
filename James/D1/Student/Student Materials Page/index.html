@@ -12,34 +12,37 @@
 <link href="styles.css" rel="stylesheet" type="text/css"/>
 <script src="button.js"></script>
 <body>    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Homepage.html"><img src = "../chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
+    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Course%20Page/index.html"><img src = "../chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->
+    <a id = "Logout" href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
+    <img src = "../apple.png" alt = "Apple" style ="width:100px; height:100px;"><!-- Add link to Page-->
     <form>
     <input id="myAccount" type="button" value="My Account">
     </form>
-    <h2>Course Name</h2><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/index.html"> Home </a> <br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/index.html"> Online Classroom </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20Page/index.html"> Assignments </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Lecture%20Slides%20Page/index.html"> Lecture Slides </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Materials%20Page/index.html"> Materials </a><br>
-   <!--
-       This is for Lectures in a different container
-   -->
-   <h1><center>Materials</center></h1>
-   <!-- using CSS to separate these categories using CSS box models-->
-   <h2><center>Lecture Slide #1</center></h2>
-   <p><center>Attached Files: lectureslides1.pdf</center></p>
-   <p><center>Hello and welcome to CSCI355. Our slides from today’s class are now available.  </center></p> 
-   
-   <h2><center>Supplement Reading</center></h2>
-   <p><center>Attached Files: IsWaterWet.pdf</center></p>
-   <p><center>Please read the above article before our next class.</center></p>
+    <div class = "sidebar">
+        <h2>Course Name</h2><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Course%20Page/index.html"> Home </a> <br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Online%20Lectures%20Page/index.html"> Online Classroom </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Assignments%20Page/InstructorAssignmentPage.html"> Assignments </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Lecture%20Slides%20Page/index.html"> Lecture Slides </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Materials%20Page/index.html"> Materials </a><br>
+    </div>
+    <div class = content>
+        <h1>Materials</h1>
+        <!-- using CSS to separate these categories using CSS box models-->
+        <h2>Lecture Slide #1</h2>
+        <p>Attached Files: lectureslides1.pdf</p>
+        <p>Hello and welcome to CSCI355. Our slides from today’s class are now available.  </p> 
+        
+        <h2>Supplement Reading</h2>
+        <p>Attached Files: IsWaterWet.pdf</p>
+        <p>Please read the above article before our next class.</p>
+     
+        <h2>Syllabus Quiz</h2>
+        <p>Attached Files: syllabus.pdf</p>
+        <p>Please read the syllabus for this class. Read and understand everything then take the syllabus 
+         quiz on blackboard before midnight this Sunday</p>
+    </div>
 
-   <h2><center>Syllabus Quiz</center></h2>
-   <p><center>Attached Files: syllabus.pdf</center></p>
-   <p><center>Please read the syllabus for this class. Read and understand everything then take the syllabus 
-    quiz on blackboard before midnight this Sunday</center></p>
 
 </body>
 </html
