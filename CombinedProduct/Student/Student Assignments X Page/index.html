@@ -10,38 +10,64 @@
 <meta>
 <title>Student Assignment Page</title>
 <link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../navigationBar.css">
 <script src="button.js"></script>
 <body>    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Homepage.html"><img src = "../chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
-    <form>
-    <input id="myAccount" type="button" value="My Account">
-    </form>
-    <h2>Course Name</h2><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/index.html"> Home </a> <br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/index.html"> Online Classroom </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20Page/index.html"> Assignments </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Lecture%20Slides%20Page/index.html"> Lecture Slides </a><br>
-    <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Materials%20Page/index.html"> Materials </a><br>
-   <!--
-       This is for Assignments in a different container
-   -->
-   <p><center>Assignment 1</center></p>
+    <ul id="navBar">
+        <li id="icon">
+		  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/">
+        <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
+      </a>
+        </li>
+		<!-- Add link to homepage here-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Homepage/Student%20Homepage.html">Home</a></li>
+		<!-- Add link to search  here-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html">Search Classes</a></li>
+		<li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html">Materials</a></li>
+		<!-- Add link to login page-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
+      </ul>
+    <section class = "sidebar">
+        <h2>CSCI 355</h2><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/index.html"> Home </a> <br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/index.html"> Online Classroom </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20Page/index.html"> Assignments </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Lecture%20Slides%20Page/index.html"> Lecture Slides </a><br>
+        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Materials%20Page/index.html"> Materials </a><br>
+       <!--
+           This is for Assignments in a different container
+       -->
+    </section>
+    
+   <div class = "Assignment">
+    <p>Assignment 1</p>
    <!-- using CSS to separate these categories using CSS box models-->
-   <p> <center>Assignment Information</center></p>
-   <p><center>Due Date</center></p>
-   <p><center>Grade:</center></p>
+   <p>Assignment Information</p>
+   <p>Due Date</p>
+   <p>Grade: / 100</p>
+   <p>Due Date: 11/19/21</p>
+   <input id="browsefile" type="button" value="Browse file"><br><!--Creates a browse file-->
+<label>Comments:</label><!--Creates a comment box-->
+
+<textarea id="commenttext" name = "commenttext" rows = "4" cols = "50" type="text"></textarea>
+<div class = "buttons">
+    <input id="saveDraft" type="button" value="Save Draft">
+    <input id="submitbtn" type="button" value="Submit">
+</div>
+
+<div class="rubric"> 
+    <p> Rubric:</p>
+<a href="Link to Rubric">Link to Rubric</a> <br><!--Creates a link to rubric file-->
+</div>
+   </div>
    
-   <p><center>Due Date</center></p>
-   <p> <center>Rubric:</center></p>
-   <center><a href="Link to Rubric">Link to Rubric</a> <br><!--Creates a link to rubric file--></center>
+   
+   
+   
+   
 
-   <input id="browsefile" type="button" value="Browser file"><br><!--Creates a browse file-->
 
-   <label>Comments:</label><!--Creates a comment box-->
-        <textarea id="commenttext" name = "commenttext" rows = "4" cols = "50" type="text"></textarea>
-        <input id="saveDraft" type="button" value="Save Draft">
-        <input id="submitbtn" type="button" value="Submit">
+   
 
 </body>
 </html

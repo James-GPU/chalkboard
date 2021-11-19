@@ -10,11 +10,24 @@
 <meta>
 <title>Create a Course</title>
 <link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../navigationBar.css">
 <script src="button.js"></script>
 <body>    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html"><img src = "Images/chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
-    <input id="myAccount" type="button" value="My Account">
+    <ul id="navBar">
+        <li id="icon">
+		  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html">
+        <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
+      </a>
+        </li>
+		<!-- Add link to homepage here-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html">Home</a></li>
+		<!-- Add link to search  here-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html">Search Classes</a></li>
+		<li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html">Materials</a></li>
+		<!-- Add link to login page-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
+      </ul>
+    <div class = "content">
     <h2> Create a course </h2>
     <form>
         <label>Course Name:</label>
@@ -23,10 +36,13 @@
         <input id="CourseNumber" type="text"><br>
         
         <label>Set of instructors:</label>
-        <textarea id="Setinstructor" name = "Setinstructor" rows = "4" cols = "50" type="text" placeholder="Add professor's name here"></textarea>
-        <input id="addinstructor" type="button" value="Add Instructor"  > <!--Don't need an add instructor page if you have one here-->
-        <input id="removeinstructor" type="button" value="Remove Instructor">
+        <textarea id="Setinstructor" name = "Setinstructor" rows = "4" cols = "50" type="text" placeholder="Add professor's name here"></textarea><br>
+        <div class ="buttons">
+            <input id="addinstructor" type="button" value="Add Instructor"  > <!--Don't need an add instructor page if you have one here-->
+        <input id="removeinstructor" type="button" value="Remove Instructor"><br>
         <br>
+        </div>
+        
         
         <label>Roster of Students:</label>
         <input id="roster" type="text"><br>
@@ -37,6 +53,6 @@
         <label>Sequence of Lessons:</label>
         <input id="sequenceLesson" type="text"><br>
     </form>
-   
+    </div> 
 </body>
 </html

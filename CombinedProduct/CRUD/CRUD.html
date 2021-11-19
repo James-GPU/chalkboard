@@ -10,20 +10,37 @@
 <meta>
 <title>CRUD</title>
 <link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../navigationBar.css">
 <script src="button.js"></script>
 <body>
-  <form>
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/InstructorHome.html"><img src = "Images/chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
-    <input id="myAccount" type="button" value="My Account"> 
-  </form>
-  <h2> Chalkboard</h2>
-  <form> 
-    <input id="createButton" type="button" value="Create a course"><br>
-    <input id="deleteButton" type="button" value="Delete a course"><br>
-    <!--<input id="addButton" type="button" value="Add Instructor"><br>-->
-    <input id="removeButton" type="button" value="Remove Instructor"><br>
-    <input id="leaveButton" type="button" value="Leave Course"><br>
-  </form>
+  <ul id="navBar">
+    <li id="icon">
+  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/">
+    <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
+  </a>
+    </li>
+<!-- Add link to homepage here-->
+    <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/">Home</a></li>
+<!-- Add link to login page-->
+    <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
+  </ul>
+  <div class = "content">
+    <!--
+ <form>
+      <input id="myAccount" type="button" value="My Account"> 
+    </form>
+    -->
+   
+    <div class = "buttons">
+      <h2> Chalkboard</h2>
+      <form> 
+        <input id="createButton" type="button" value="Create a course"><br><br>
+        <input id="deleteButton" type="button" value="Delete a course"><br><br>
+        <input id="removeButton" type="button" value="Remove Instructor"><br><br>
+        <input id="leaveButton" type="button" value="Leave Course"><br><br>
+      </form>
+    </div>
+  </div>
+  
 </body>
 </html

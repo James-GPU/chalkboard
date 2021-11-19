@@ -10,13 +10,21 @@
 <meta>
 <title>Leave a Course</title>
 <link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../navigationBar.css">
 <script src="button.js"></script>
 <body>    
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html"><img src = "Images/chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;"> </a> <!-- Add link to Page-->
-    <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"> Log out</a> <!--Planning on using CSS to put to the top right-->
-    <img src = "chalkboard_transparent.png" alt = "Chalkboard" style ="width:200px; height:200px;">
-    <input id="myAccount" type="button" value="My Account">
-    <h2> Delete a course </h2>
+    <ul id="navBar">
+        <li id="icon">
+		  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Course%20Page/">
+		  <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
+          </a>
+        </li>
+		<!-- Add link to homepage here-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/">Home</a></li>
+		<!-- Add link to login page-->
+        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
+      </ul>
+    <h2> Leave a course </h2>
     <form>
         <label>Course Name:</label>
         <input id="CourseName" type="text" > <br>
