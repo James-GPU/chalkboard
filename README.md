@@ -1,7 +1,7 @@
 <ol>
 <li>https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html</li>
 <li>Ashley Simons and James Ng</li> <br>
-Roles to be determined. Contributions are separated via D1 folders within our names. <br> 
+Roles to be determined.
 <li> List of Features </li>
 
 [Admin View](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Admin%20View/Admin%20View.html)
