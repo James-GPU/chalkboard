@@ -10,7 +10,6 @@
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
 -->
 
-<html>
 <html lang="en">
 
 <head>
@@ -23,8 +22,8 @@
 	<ul id="navBar">
     <li id="icon">
   <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">
-    <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
-  </a>
+    <img src = "chalkboard_transparent.png" alt = "Chalkboard" style ="width:75px; height:65px;"> </a>
+
     </li>
 <!-- Add link to homepage here-->
     <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Home</a></li>
@@ -32,21 +31,21 @@
 <!-- Add link to login page-->
     <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
   </ul>
-</head>
 
-<body>
+
+
   <h1 style=text-align:center>Create an Account</h1>
   <form>
     <table>
       <tr>
         <td>Name:</td>
         <td>
-          <input type="text" placeholder="John Smith" name="" required>
+          <input type="text" placeholder="John Smith" required>
         </td>
       </tr>
       <tr>
         <td>Phone Number:</td>
-        <td><input type="phone" placeholder="###-###-####" required></td>
+        <td><input type="tel" placeholder="###-###-####" required></td>
       </tr>
       <tr>
         <td>Email:</td>
@@ -85,7 +84,7 @@
       <tr>
         <td>Answer:</td>
         <td>
-          <input type="securityQuestion" required>
+          <input type="text" required>
         </td>
       </tr>
       <tr>
@@ -101,7 +100,7 @@
       <tr>
         <td>Answer:</td>
         <td>
-          <input type="securityQuestion" required>
+          <input type="text" required>
         </td>
       </tr>
       <tr>
@@ -117,7 +116,7 @@
       <tr>
         <td>Answer:</td>
         <td>
-          <input type="securityQuestion" required>
+          <input type="text" required>
         </td>
       </tr>
       <tr>
@@ -125,7 +124,7 @@
           Address:
         </td>
         <td>
-          <textarea rows="5" col="17" placeholder="Address"></textarea>
+          <textarea rows="5" placeholder="Address"></textarea>
         </td>
       </tr>
       <tr>
@@ -133,7 +132,7 @@
           <input type="submit" value="Submit">
           <input type="submit" value="Clear">
         </td>
-      </tr>
+      <!--</tr>-->
     </table>
   </form>
 </body>

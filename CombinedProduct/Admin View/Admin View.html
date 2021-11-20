@@ -7,85 +7,104 @@
 
   References: Linkedin Learning and Zybooks assigments from CS355
 -->
-
-<html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin View</title>
+    <link rel="stylesheet" href="adminView.css" />
+    <link rel="stylesheet" href="../navigationBar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin View</title>
-  <link rel="stylesheet" href="adminView.css">
-  <link rel="stylesheet" href="../navigationBar.css">
+  <body>
+    <ul id="navBar">
+      <li id="icon">
+        <a
+          href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"
+        >
+          <img
+            src="chalkboard_transparent.png"
+            alt="Chalkboard"
+            style="width: 75px; height: 65px"
+          />
+        </a>
+      </li>
+      <!-- Add link to homepage here-->
+      <li>
+        <a
+          href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Admin%20View/Admin%20View.html"
+          >Home</a
+        >
+      </li>
+      <!-- Add link to search  here-->
+      <li>
+        <a
+          href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html"
+          >Search Classes</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html"
+          >Materials</a
+        >
+      </li>
+      <!-- Add link to login page-->
+      <li>
+        <a
+          href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"
+          >Log Out</a
+        >
+      </li>
+    </ul>
 
-</head>
-
-<body>
- <ul id="navBar">
-        <li id="icon">
-		  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">
-		  <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
-          </a>
-        </li>
-		<!-- Add link to homepage here-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Admin%20View/Admin%20View.html">Home</a></li>
-		<!-- Add link to search  here-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html">Search Classes</a></li>
-		<li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html">Materials</a></li>
-		<!-- Add link to login page-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
-      </ul>
-	  
-  <h2 style=text-align:center>Admin View</h2>
+    <h2 style="text-align: center">Admin View</h2>
 
     <div class="courses">
       <h2>Courses</h2>
-	   <tr>
-        <td>
-          <input type="submit" value="Add Course">
-          <input type="submit" value="Remove Course">
-        </td>
-      </tr>
+
+      <input type="submit" value="Add Course" />
+      <input type="submit" value="Remove Course" />
+
       <table>
         <tr>
           <th>Name</th>
           <th>Department</th>
           <th>Number</th>
           <th>Instructor</th>
-		  <th>Class Capacity</th>
-		  <th>Current Enrollment</th>
-		  <th>Roster</th>
+          <th>Class Capacity</th>
+          <th>Current Enrollment</th>
+          <th>Roster</th>
         </tr>
         <tr>
           <td>Web Tech</td>
           <td>CSCI</td>
           <td>355</td>
           <td>Mark Ambrov</td>
-		  <td>30</td>
-		  <td>22</td>
-		  <!-- Add Link to roster here-->
+          <td>30</td>
+          <td>22</td>
+          <!-- Add Link to roster here-->
           <td>View</td>
         </tr>
         <tr>
           <td>College Writing</td>
           <td>English</td>
           <td>110</td>
-		  <td>William Shakespeare</td>
-		  <td>15</td>
-		  <td>10</td>
+          <td>William Shakespeare</td>
+          <td>15</td>
+          <td>10</td>
           <td>View</td>
         </tr>
       </table>
     </div>
-	
+
     <div class="students">
       <h2>Students</h2>
-	   <tr>
-        <td>
-          <input type="submit" value="Add Student">
-          <input type="submit" value="Remove Student">
-        </td>
-      </tr>
+
+      <input type="submit" value="Add Student" />
+      <input type="submit" value="Remove Student" />
+
       <table>
         <tr>
           <th>First Name</th>
@@ -113,12 +132,10 @@
 
     <div class="instructors">
       <h2>Instructors</h2>
-	  <tr>
-        <td>
-          <input type="submit" value="Add Instructor">
-          <input type="submit" value="Remove Instructor">
-        </td>
-      </tr>
+
+      <input type="submit" value="Add Instructor" />
+      <input type="submit" value="Remove Instructor" />
+
       <table>
         <tr>
           <th>First Name</th>
@@ -143,8 +160,5 @@
         </tr>
       </table>
     </div>
-
   </body>
 </html>
-
-

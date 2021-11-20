@@ -13,10 +13,6 @@ body {
   top: 0px;
   right: 15px;
 }
-.buttons {
-  position: absolute;
-  left: 25em;
-}
 @media screen and (min-width: 20em) {
   .content {
     font-size: 1.5em;

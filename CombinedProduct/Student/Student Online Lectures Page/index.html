@@ -7,54 +7,102 @@
     This allows shows an student their lecture view of a course
 -->
 <html lang="en">
-<meta>
-<title>Online Lecture Page</title>
-<link href="styles.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="../navigationBar.css">
+ <meta charset="UTF-8" />
+ <title>Online Lecture Page</title>
+ <link href="styles.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="../navigationBar.css" />
 
-<script src="button.js"></script>
-<body>    
-    <ul id="navBar">
-        <li id="icon">
-		  <a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html">
-        <img src = "/CombinedProduct/Images/chalkboard_transparent.png"alt = "Chalkboard"style ="width:75px; height:65px;"> </a>
-      </a>
-        </li>
-		<!-- Add link to homepage here-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html">Home</a></li>
-		<!-- Add link to search  here-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html">Search Classes</a></li>
-		<li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html">Materials</a></li>
-		<!-- Add link to login page-->
-        <li><a href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html">Log Out</a></li>
-      </ul>
-    <div class = "sidebar">
-        <h2>Course Name</h2><br>
-        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Course%20Page/index.html"> Home </a> <br>
-        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Online%20Lectures%20Page/index.html"> Online Classroom </a><br>
-        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Assignments%20Page/InstructorAssignmentPage.html"> Assignments </a><br>
-        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Lecture%20Slides%20Page/index.html"> Lecture Slides </a><br>
-        <a href = "https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Materials%20Page/index.html"> Materials </a><br>
-    </div>
-    
-   <!--
+ <body>
+  <ul id="navBar">
+   <li id="icon">
+    <a
+     href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Homepage/Student%20Homepage.html"
+    >
+     <img
+      src="../chalkboard_transparent.png"
+      alt="Chalkboard"
+      style="width: 75px; height: 65px"
+     />
+    </a>
+   </li>
+   <!-- Add link to homepage here-->
+   <li>
+    <a
+     href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/"
+     >Home</a
+    >
+   </li>
+   <!-- Add link to search  here-->
+   <li>
+    <a
+     href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html"
+     >Search Classes</a
+    >
+   </li>
+   <li>
+    <a
+     href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html"
+     >Materials</a
+    >
+   </li>
+   <!-- Add link to login page-->
+   <li>
+    <a
+     href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page.html"
+     >Log Out</a
+    >
+   </li>
+  </ul>
+  <div class="sidebar">
+   <h2>Course Name</h2>
+   <br />
+   <a
+    href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/"
+   >
+    Home
+   </a>
+   <br />
+   <a
+    href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/"
+   >
+    Online Classroom </a
+   ><br />
+   <a
+    href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20Page/"
+   >
+    Assignments </a
+   ><br />
+   <a
+    href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/"
+   >
+    Lecture Slides </a
+   ><br />
+   <a
+    href="https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Materials%20Page/"
+   >
+    Materials </a
+   ><br />
+  </div>
+
+  <!--
        This is for Lectures in a different container
    -->
-   <div class = content>
-    <h1>Online Lecture Page</h1>
-    <p> Lecture Slides</p>
-    <p>Search Session </p> <!--Planning to use a button or picture for a search function-->
-    <p>Session 1</p>
-    <p>Session 2</p>
-    <p>Session 3</p>
-    <p>Session 4</p>
-    <p>Session 5</p>
-    <p>Session 6</p>
-    <p>Session 7</p>
-    <p>Session 8</p>
-    <p>Session 9</p>
-    <p>Session 10</p>
-    <p>Session 11</p>
-   </div>
-</body>
-</html
+  <div class="content">
+   <h1>Online Lecture Page</h1>
+   <p>Lecture Slides</p>
+   <p>Search Session</p>
+   <!--Planning to use a button or picture for a search function-->
+   <p>Session 1</p>
+   <p>Session 2</p>
+   <p>Session 3</p>
+   <p>Session 4</p>
+   <p>Session 5</p>
+   <p>Session 6</p>
+   <p>Session 7</p>
+   <p>Session 8</p>
+   <p>Session 9</p>
+   <p>Session 10</p>
+   <p>Session 11</p>
+  </div>
+ </body>
+</html>
