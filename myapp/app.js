@@ -2,10 +2,10 @@ const express = require("express");
 const PORT = process.env.PORT || 3000;
 const app = express();
 const mysql = require("mysql");
-
+/*
 app.listen(PORT, () => {
  console.log(`Server started on port ${PORT}`);
-});
+});*/
 //Create connection
 const db = mysql.createConnection({
  host       : 'us-cdbr-east-04.cleardb.com',
@@ -49,9 +49,3 @@ console.log(result);
 res.send('Student added...');
     });
 });
-
-/*
-app.get("/", (request, response) => {
- response.send("Hello Pal!");
-});
-*/
