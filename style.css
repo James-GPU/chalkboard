@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* * selects every element on the page*/
+* {
+  /*fit inside of the white box*/
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.responsive {
+  max-width: 40%;
+  max-height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #a5a6f6;
+}
+
+/*white textbo*/
+.wrapper {
+  width: 500px;
+  /*padding: top, right, bottom, left*/
+  padding: 40px 40px 40px 40px;
+  background: #ffffff;
+  /*curved edges*/
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*Text for "Login"*/
+.wrapper header {
+  font-size: 30px;
+  /*AKA boldness*/
+  font-weight: 400;
+}
+
+/*Add space between Email Address box and Login text*/
+.wrapper form {
+  margin: 30px 0;
+}
+
+/*Add space between email text box and password text box*/
+.field {
+  margin-bottom: 15px;
+}
+
+/*Email and PAssword textbox design*/
+.field .inputDesign {
+  height: 45px;
+  width: 100%;
+  position: relative;
+}
+
+/*input text box designs*/
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  background: none;
+  caret-color: #a5a6f6;
+  /*curved edges*/
+  border-radius: 10px;
+  border: 2px solid #bfbfbf;
+}
+
+/*Forgot password and signup button*/
+.wrapper a {
+  color: #865be4;
+  /*Put none so the underline*/
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  color: #2f1833;
+}
+
+/*Design the Login button*/
+.buttons {
+  height: 40px;
+  /*distance between top of login button and password box*/
+  margin-top: 15px;
+  color: #ffffff;
+  border: none;
+  background: #a5a6f6;
+  cursor: pointer;
+}
+
+/*hover over login button and make the light purple turn dark*/
+input[type="buttons"]:hover {
+  background: #6604ff;
+}
+
+@media only screen and (max-width: 2000px) {
+  body {
+    margin: 0;
+  }
+
+  .wrapper {
+    margin: auto;
+    width: 65vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  .wrapper {
+    margin: auto;
+    width: 65vw;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+  }
+
+  .textinput {
+    border-radius: 2px;
+    padding: 1px;
+    font-size: 0.5em;
+    width: 50%;
+  }
+
+  img {
+    max-width: 75%;
+    width: 75vw;
+  }
+}

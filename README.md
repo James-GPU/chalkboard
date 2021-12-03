@@ -4,61 +4,61 @@
 Roles to be determined.
 <li> List of Features </li>
 
-[Admin View](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Admin%20View/Admin%20View.html)
+[Admin View](https://cs355chalkboard.ashleysi.repl.co/AdminView/AdminView.html)
 
-[Course Information](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Information/Course%20Information.html)
+[Course Information](https://cs355chalkboard.ashleysi.repl.co/CourseInfromation/CourseInformation.html)
 
-[Create an Account](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Create%20an%20Account/Create%20an%20Account.html)
+[Create an Account](https://cs355chalkboard.ashleysi.repl.co/CreateAnAccount/CreateAnAccount.html)
 
-[Forgot Username or Password](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Forgot%20Username%20and%20Password/Forgot%20Username%20or%20Password.html)
+[Forgot Username or Password](https://cs355chalkboard.ashleysi.repl.co/ForgotUsernameAndPassword/ForgotUsernameAndPassword.html)
 
-[Login Page](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Login%20Page/Login%20Page.html)
+[Login Page](https://cs355chalkboard.ashleysi.repl.co/LoginPage/LoginPage.html)
 
-[Search for Classes](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Search%20for%20Classes/Search%20for%20Classes.html)
+[Search for Classes](https://cs355chalkboard.ashleysi.repl.co/SearchForClasses/SearchForClasses)
 
-[Create a Course](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Create%20a%20Course/createACourse.html)
+[Create a Course](https://cs355chalkboard.ashleysi.repl.co/CreateACourse/CreateACourse.html)
 
-[Delete a Course](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Delete%20a%20course/deleteaCourse.html)
+[Delete a Course](https://cs355chalkboard.ashleysi.repl.co/DeleteACourse/DeleteACourse.html)
 
-[CRUD](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/CRUD/CRUD.html)
+[CRUD](https://cs355chalkboard.ashleysi.repl.co/CRUD/CRUD.html)
 
-[Leave a Course](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Leave%20a%20course/leaveCourse.html)
+[Leave a Course](https://cs355chalkboard.ashleysi.repl.co/LeaveACourse/LeaveACourse.html)
   
-[Course Materials](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Course%20Materials/Course%20Materials.html)
+[Course Materials](https://cs355chalkboard.ashleysi.repl.co/CourseMaterials/CourseMaterials.html)
 
 ## Student Section
 
-[Student Homepage](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Homepage/Student%20Homepage.html)
+[Student Homepage](https://cs355chalkboard.ashleysi.repl.co/StudentHomepagePage/StudentHomePage.html)
 
-[Student Course Page](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Course%20Page/)
+[Student Course Page](https://cs355chalkboard.ashleysi.repl.co/Student/StudentCoursePage/StudentCoursePage.html)
 
-[Student Assignments](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20Page/)
+[Student Assignments](https://cs355chalkboard.ashleysi.repl.co/Student/StudentAssignmentsPage/StudentAssignmentsPage.html)
 
-[Student Assignments X](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Assignments%20X%20Page/)
+[Student Assignments X](https://cs355chalkboard.ashleysi.repl.co/Student/StudentAssignmentsXPage/StudentAssignmentsXPage.html)
 
-[Student Lecture Slides](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Lecture%20Slides%20Page/)
+[Student Lecture Slides](https://cs355chalkboard.ashleysi.repl.co/Student/StudentLectureSlidesPage/StudentLectureSlidesPage.html)
 
-[Student Materials Page](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Materials%20Page/)
+[Student Materials Page](https://cs355chalkboard.ashleysi.repl.co/Student/StudentMaterialsPage/StudentMaterialsPage.html)
 
-[Student Online Lectures](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student/Student%20Online%20Lectures%20Page/)
+[Student Online Lectures](https://cs355chalkboard.ashleysi.repl.co/Student/StudentOnlineLecturesPage/StudentOnlineLecturesPage.html)
 
 ## Instructor Section
 
-[Instructor Homepage](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Home%20Page/)
+[Instructor Homepage](https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorHomePage/InstructorHomePage.html)
 
-[Instructor Course Page](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Course%20Page/)
+[Instructor Course Page](https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorCoursePage/InstructorCoursePage.html)
 
-[Instructor Assignments](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Assignments%20Page/InstructorAssignmentPage.html)
+[Instructor Assignments](https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorAssignmentsPage/InstructorAssignmentsPage.html)
 
-[Instructor Assignments X](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Assignments%20X%20Page/)
+[Instructor Assignments X](https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorAssignmentsXPage/InstructorAssignmentsXPage.html)
 
-[Instructor Lecture Slides](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Lecture%20Slides%20Page/)
+[Instructor Lecture Slides](https://cs355chalkboard.ashleysi.repl.co/InstructorLectureSlidesPage/InstructorLectureSlidesPage.html)
 
-[Instructor Materials Page](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Materials%20Page/)
+[Instructor Materials Page](https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorMaterialsPage/InstructorMaterialsPage.html)
 
-[Instructor Online Lectures](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Instructor/Instructor%20Online%20Lectures%20Page/)
+[Instructor Online Lectures](https://cs355chalkboard.ashleysi.repl.co/InstructorLectureSlidesPage/InstructorLectureSLidesPage.html)
   
-[Student Roster](https://venus.cs.qc.cuny.edu/~ngja7482/cs355/Term/Student%20Roster/studentRoster.html)
+[Student Roster](https://cs355chalkboard.ashleysi.repl.co/StudentRoster/StudentRoster.html)
 
 <li> To be determined</li>
 <li> To be determined</li>
