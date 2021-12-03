@@ -12,23 +12,35 @@ const db = mysql.createConnection({
  database: "heroku_bc4f1d8046a1fa8",
  //port: '3306',
 });
-/*
+
 app.listen(PORT, () => {
  //DO NOT PUT THIS IN REPLIT
  console.log(`Server started on port ${PORT}`);
-});*/
+});
 db.connect((err) => {
  //connects to the database and if successful, logs it into the console
  if (err) console.log(err);
  console.log("MySQL connected");
 });
-
-app.post("/post", function (req, res) {
- let user = { username: "Jim", password: "Gordon" };
+//inserts the data into the database
+app.post("/login", function (req, res) {
+ let user = { username: "Bob", password: "Gordon" };
  let sql = "INSERT INTO Student SET ?";
  db.query(sql, user, (err, result) => {
   if (err) console.log(err);
   console.log(result);
   res.send("Student added...");
  });
+});
+//Gets the info if you send a post request to user
+app.post("/user", function (req, res) {
+ db.query(
+  `SELECT * FROM student WHERE username = ${mysql.escape("jim")}`, //change the name if you want to look for another name
+  (err, result) => {
+   if (err) {
+    throw err;
+   }
+   console.log(result);
+  }
+ );
 });
