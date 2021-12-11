@@ -1,0 +1,95 @@
+<!--
+  Name: Ashley Simons 
+  Date: 10.22.2021
+  Course: CS 355
+
+  This is the login page of our Chalkboard. Here the user can enter their email and password, then click login to enter the homepage. If they forgot their username or password they click the forgot username/password option. This will bring them to a new page to reset their username or password. If the user is a first time user, they can have the option to make an account and they will be brought to a new page. If they click Chalkboard at the top of the page it will not do anything.  
+
+  References: Linkedin Learning and Zybooks assigments from CS355
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Login Page</title>
+</head>
+
+<body>
+	<div>
+		<a href="https://CS355Chalkboard.ashleysi.repl.co"><img
+     src="chalkboard_transparent.png"
+     alt="Chalkboard"
+     class="responsive"
+    />
+   </a>
+  </div>
+
+  <div class="wrapper">
+   <header>Login</header>
+   <form action="/login" type="email" method="POST" >
+    <div class="field email">
+     <div class="enterEmail">
+      <input name = "user" id = "user" class="user" type="email" placeholder="JaneDoe@domain.com" required />
+      <input name = "pass" class="pass" type="password" placeholder="Password" required />
+     </div>
+    </div>
+  <!--
+    <div class="field password">
+     <div class="enterPassword">
+      
+     </div>
+    </div>
+   </form>
+   -->
+   <!--<input id = "studentloginbtn"type="submit" value="Login as Student">This is to navigate the student side as we haven't developed credentials yet-->
+   <!--<input id = "instructorloginbtn"type="submit" value="Login as Instructor">This is to navigate the instructor side as we haven't developed credentials yet-->
+   
+<!--
+   <a
+    href="https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorHomePage/InstructorHomePage.html"
+    >Login as Instructor</a> 
+    
+     
+    </body>
+    
+   
+   <a
+    href="https://cs355chalkboard.ashleysi.repl.co/StudentHomepage/StudentHomepage.html"
+    >Login as Student</a
+   >
+
+   <a
+    href="https://cs355chalkboard.ashleysi.repl.co/AdminView/AdminView.html"
+    >Login as Admin</a
+   >
+
+
+
+ <div class="forgotUsernamePassword">
+    <a
+     href="https://cs355chalkboard.ashleysi.repl.co/CreateAnAccount/CreateAnAccount.html"
+     >Create an Account</a>  
+     </div>   
+
+
+   <div class="forgotUsernamePassword">
+    <a
+     href="https://cs355chalkboard.ashleysi.repl.co/ForgotUsernameAndPassword/ForgotUsernameAndPassword.html"
+     >Forgot username or password?</a
+    >
+   </div>
+   -->
+   <form action="/login" method="POST" >
+
+   <input id = "studentloginbtn"type="submit" value="Login as Student">
+   
+   <!--<input id = "instructorloginbtn"type="submit" value="Login as Instructor">-->
+  </div>
+ <script src="/server.js"></script>
+ <!--<script src="checkform.js"></script>-->
+ <!--<script src="routes.js"></script>-->
+ </body>
+</html>
