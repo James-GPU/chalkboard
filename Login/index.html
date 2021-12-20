@@ -19,7 +19,7 @@
 
 <body>
 	<div>
-		<a href="https://CS355Chalkboard.ashleysi.repl.co"><img
+		<a href="/"><img
      src="chalkboard_transparent.png"
      alt="Chalkboard"
      class="responsive"
@@ -29,67 +29,27 @@
 
   <div class="wrapper">
    <header>Login</header>
-   <form action="/login" type="email" method="POST" >
+   <form action="/login" method="POST">
     <div class="field email">
      <div class="enterEmail">
       <input name = "user" id = "user" class="user" type="email" placeholder="JaneDoe@domain.com" required />
-      <input name = "pass" class="pass" type="password" placeholder="Password" required />
+      <input name = "pass" class="pass" type="password" placeholder="Password" required/>
      </div>
     </div>
-  <!--
-    <div class="field password">
-     <div class="enterPassword">
-      
-     </div>
-    </div>
-   </form>
-   -->
-   <!--<input id = "studentloginbtn"type="submit" value="Login as Student">This is to navigate the student side as we haven't developed credentials yet-->
-   <!--<input id = "instructorloginbtn"type="submit" value="Login as Instructor">This is to navigate the instructor side as we haven't developed credentials yet-->
-   
-<!--
-   <a
-    href="https://cs355chalkboard.ashleysi.repl.co/Instructor/InstructorHomePage/InstructorHomePage.html"
-    >Login as Instructor</a> 
-    
      
-    </body>
+   <input id = "studentloginbtn" type="submit" value="Login as Student">
+
+    <input id = "instructorloginbtn" type="submit" value="Login as Instructor" formaction="/instruct">
     
-   
-   <a
-    href="https://cs355chalkboard.ashleysi.repl.co/StudentHomepage/StudentHomepage.html"
-    >Login as Student</a
-   >
+   <input id = "adminloginbtn" type="submit" value="Login as Admin" formaction="/admin">
+    </form>
 
-   <a
-    href="https://cs355chalkboard.ashleysi.repl.co/AdminView/AdminView.html"
-    >Login as Admin</a
-   >
+    <a href="/ForgotUsernameAndPassword">Forgot Username or Password</a>
+    <a href="/CreateAnAccount">Create an Account</a>
 
-
-
- <div class="forgotUsernamePassword">
-    <a
-     href="https://cs355chalkboard.ashleysi.repl.co/CreateAnAccount/CreateAnAccount.html"
-     >Create an Account</a>  
-     </div>   
-
-
-   <div class="forgotUsernamePassword">
-    <a
-     href="https://cs355chalkboard.ashleysi.repl.co/ForgotUsernameAndPassword/ForgotUsernameAndPassword.html"
-     >Forgot username or password?</a
-    >
-   </div>
-   -->
-   <form action="/login" method="POST" >
-
-   <input id = "studentloginbtn"type="submit" value="Login as Student">
-   
-   <!--<input id = "instructorloginbtn"type="submit" value="Login as Instructor">-->
   </div>
- <script src="/server.js"></script>
- <!--<script src="checkform.js"></script>-->
- <!--<script src="routes.js"></script>-->
+     
+ <script src="./server.js"></script>
+
  </body>
 </html>

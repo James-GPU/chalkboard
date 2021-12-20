@@ -7,26 +7,29 @@ const cors = require("cors");
 //app.set("view engine","ejs")
 app.use(express.static("./Login"));
 app.use(express.static("./Images"));
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static("./public"));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(__dirname+ '/Login'));
+app.use(express.static(__dirname+ "./Login"));
 // With middleware
 /*
 app.use("/", function(req, res, next){
     res.sendFile("Login/index.html" ,{root: __dirname});
 });
 */
+const hostnameinfo = process.env['host'];
+const usernameinfo = process.env['user'];
+const passwordinfo = process.env['password']
+const databaseinfo = process.env['database']
 //Create connection to database
-const db = mysql.createConnection({
- host: "us-cdbr-east-04.cleardb.com",
- user: "b69d32883bf511",
- password: "a28ca1ec",
- database: "heroku_bc4f1d8046a1fa8",
- //port: "3306",
+const db = mysql.createPool({
+host:hostnameinfo,
+user:usernameinfo,
+password:passwordinfo,
+database:databaseinfo
 });
-
-db.connect((err) => {
+db.getConnection((err) => {
  //connects to the database and if successful, logs it into the console
  if (err) console.log(err);
  console.log("MySQL connected");
@@ -35,46 +38,161 @@ db.connect((err) => {
 //works if sendFile is not present after the first time
 //inserts into database
 
-/*
-app.post("/login", function (req, res) {
- let user = { username: "test@gmail.com", password: "password" };
- let sql = "INSERT INTO Student SET ?";
- db.query(sql, user, function(err, result) {
-  if (err) console.log(err);
-  console.log(res);
-  res.send("Student added...");
- });
-});
-*/
-
 app.post("/login", function(req, res) {//when sent a post message,  the following will start
-let user = JSON.stringify(req.body.user);
-let pass = JSON.stringify(req.body.pass);
-let usercheck = false;
-let passcheck = false;
+let user = JSON.parse(JSON.stringify(req.body.user));
+let pass = JSON.parse(JSON.stringify(req.body.pass));
+  //code to get the password and username from db
+ db.query(`SELECT username, password FROM student WHERE username = ${mysql.escape(user)} AND password = ${mysql.escape(pass)}`,function(err, result){
+    //if I were to type a password that is not in the database, it gives me undefined or []
+    if(err){
+      console.log(err);
+    }
+    let compare = JSON.parse(JSON.stringify(result));
+    console.log(compare)
+if(compare == null || compare.length == 0) {
+  console.log(user);
+  res.redirect("/");
+}
+    else{
+      res.redirect("/StudentHomepage");
+    } 
+  });
+});
+
+//Instructor Login
+app.post("/instruct", function(req, res) {//when sent a post message,  the following will start
+let user = JSON.parse(JSON.stringify(req.body.user));
+ // console.log(user);
+let pass = JSON.parse(JSON.stringify(req.body.pass));
+  //code to get the password and username from db
+  //console.log(pass);
+ db.query(`SELECT username, password FROM instructor WHERE username = ${mysql.escape(user)} AND password = ${mysql.escape(pass)}`,function(err, result){
+    //if I were to type a password that is not in the database, it gives me undefined or []
+    if(err){
+      console.log(err);
+    }
+    let compare = JSON.parse(JSON.stringify(result));
+    //console.log(compare)
+if(compare == null || compare.length == 0) {
+  //console.log(user);
+  res.redirect("/");
+}
+    else{
+      res.redirect("/InstructorHomePage");
+    } 
+  });
+});
+
+//Admin Login
+app.post("/admin", function(req, res) {//when sent a post message,  the following will start
+let user = JSON.parse(JSON.stringify(req.body.user));
+let pass = JSON.parse(JSON.stringify(req.body.pass));
+  //code to get the password and username from db
+ db.query(`SELECT username, password FROM admin WHERE username = ${mysql.escape(user)} AND password = ${mysql.escape(pass)}`,function(err, result){
+    //if I were to type a password that is not in the database, it gives me undefined or []
+    if(err){
+      console.log(err);
+    }
+    let compare = JSON.parse(JSON.stringify(result));
+    console.log(compare)
+if(compare == null || compare.length == 0) {
+  console.log(user);
+  res.redirect("/");
+}
+    else{
+      res.redirect("/AdminView");
+    } 
+  });
+});
+
+app.get("/AdminView", function(req, res) {
+  res.sendFile(__dirname + "/public/html/adminview.html");
+});
+app.get("/CourseInformation", function(req, res) {
+  res.sendFile(__dirname + "/public/html/courseinformation.html");
+});
+app.get("/CourseMaterials", function(req, res) {
+  res.sendFile(__dirname + "/public/html/coursematerials.html");
+});
+app.get("/CreateACourse", function(req, res) {
+  res.sendFile(__dirname + "/public/html/createacourse.html");
+});
+app.get("/CreateAnAccount", function(req, res) {
+  res.sendFile(__dirname + "/public/html/createanaccount.html");
+});
+app.get("/CRUD", function(req, res) {
+  res.sendFile(__dirname + "/public/html/crud.html");
+});
+app.get("/CRUD", function(req, res) {
+  res.sendFile(__dirname + "/public/html/crud.html");
+});
+app.get("/DeleteACourse", function(req, res) {
+  res.sendFile(__dirname + "/public/html/deleteacourse.html");
+});
+app.get("/ForgotUsernameAndPassword", function(req, res) {
+  res.sendFile(__dirname + "/public/html/forgotusernameandpassword.html");
+});
+app.get("/InstructorAssignmentsPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructorassignmentspage.html");
+});
+app.get("/InstructorAssignmentsXPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructorassignmentsxpage.html");
+});
+app.get("/InstructorCoursePage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructorcoursepage.html");
+});
+app.get("/InstructorHomePage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructorhomepage.html");
+});
+app.get("/InstructorLectureSlidesPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructorlectureslidespage.html");
+});
+app.get("/InstructorMaterialsPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructormaterialspage.html");
+});
+app.get("/InstructorOnlineLecturesPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/instructoronlinelecturespage.html");
+});
+app.get("/LeaveACourse", function(req, res) {
+  res.sendFile(__dirname + "/public/html/leaveacourse.html");
+});
+app.get("/SearchForClasses", function(req, res) {
+  res.sendFile(__dirname + "/public/html/searchforclasses.html");
+});
+app.get("/StudentAssignmentsPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentassignmentspage.html");
+});
+app.get("/StudentAssignmentsXPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentassignmentsxpage.html");
+});
+app.get("/StudentCoursePage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentcoursepage.html");
+});
+app.get("/StudentHomepage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studenthomepage.html");
+});
+app.get("/StudentLectureSlidesPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentlectureslidespage.html");
+});
+app.get("/StudentMaterialsPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentmaterialspage.html");
+});
+app.get("/StudentOnlineLecturesPage", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentonlinelecturespage.html");
+});
+app.get("/StudentRoster", function(req, res) {
+  res.sendFile(__dirname + "/public/html/studentroster.html");
+});
 
 
-  res.json({//so far this just puts the code onto the screen
-    "username": req.body.user,
-    "password": req.body.pass
-  });
-  /*
-  let username = db.query(`SELECT username FROM student WHERE username = ${mysql.escape(user)}`,(err,result)=>{//queries the database for info
-  if(err){
-    throw err//throws error if error
-  }
-  //if (user == result[0])usercheck = true;
-  });
-  let password = db.query(`SELECT password FROM student WHERE password =${mysql.escape(pass)}`,(err,result)=>{//queries the database for info
-  if(err){
-    throw err//throws error if error
-  }
-  //if(pass == result[0])passcheck = true;
-  });
-
-  //if (user == true && pass == true)res.json({"user" : "True",
-  //"pass" : "True"});
-  */
+app.get("/dashboard", function(req, res){
+  // probaly use JWT, can also look into passport or bcrypt
+  // if (user is verified) { 
+  //    continue to dashboard;
+  // }
+  // else {
+  //    redirect to login;
+  // }
 });
 
 app.listen(PORT, function(err){
@@ -83,4 +201,3 @@ app.listen(PORT, function(err){
 });
 //ps aux | grep node
 //kill -9 PID
-module.exports = db;

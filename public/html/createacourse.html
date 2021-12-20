@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Name: James Ng
+    Date: 10/22/21
+    Course: CS 355
+    This is the create a course page for my CS 355 Term Project.
+    This allows instructors to create a course
+-->
+<html lang="en">
+    <meta charset="UTF-8" />
+  <title>Create a Course</title>
+  <link href="./styles/createacourse.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../navigationbar.css" />
+  
+    <ul id="navBar">
+    <li id="icon">
+    <a href="/InstructorHomePage"><img
+     src="chalkboard_transparent.png"
+     alt="Chalkboard"
+     class="responsive"
+     style="width: 75px; height: 65px"
+    />
+   </li>
+   <!-- Add link to homepage here-->
+   <li>
+    <a
+     href="/StudentHomepage"
+     >Home</a
+    >
+   </li>
+   <!-- Add link to search  here-->
+   <li>
+    <a
+     href="/SearchForClasses"
+     >Search Classes</a
+    >
+   </li>
+   <li>
+    <a
+     href="/CourseMaterials"
+     >Materials</a
+    >
+   </li>
+   <!-- Add link to login page-->
+   <li>
+    <a
+     href="/"
+     >Log Out</a
+    >
+   </li>
+  </ul>
+
+    <div class="content">
+      <h2>Create a course</h2>
+      <form>
+        <label>Course Name:</label>
+        <input id="CourseName" type="text" /> <br />
+        <label>Course Number:</label>
+        <input id="CourseNumber" type="text" /><br />
+
+        <label>Set of instructors:</label>
+        <textarea
+          id="Setinstructor"
+          name="Setinstructor"
+          rows="4"
+          cols="50"
+          placeholder="Add professor's name here"
+        ></textarea
+        ><br />
+        <div class="buttons">
+          <input id="addinstructor" type="button" value="Add Instructor" />
+          <!--Don't need an add instructor page if you have one here-->
+          <input
+            id="removeinstructor"
+            type="button"
+            value="Remove Instructor"
+          /><br />
+          <br />
+        </div>
+
+        <label>Roster of Students:</label>
+        <input id="roster" type="text" /><br />
+
+        <label>Description of Course:</label>
+        <input id="descriptionCourse" type="text" /><br />
+
+        <label>Sequence of Lessons:</label>
+        <input id="sequenceLesson" type="text" /><br />
+      </form>
+    </div>
+  </body>
+</html>
