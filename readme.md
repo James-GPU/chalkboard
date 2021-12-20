@@ -114,8 +114,8 @@ Contributions:
 
 <li> Sitemap and WireFrame
 
-[Sitemap]()
+[Sitemap](https://github.com/James-GPU/chalkboard/blob/master/Sitemap%20and%20Wireframe/Sitemap/James'%20Sitemap/Sitemap.png)
 
-[Wireframe]()
+[Wireframe](https://github.com/James-GPU/chalkboard/tree/master/Sitemap%20and%20Wireframe/Wireframe)
 
 </ol>
