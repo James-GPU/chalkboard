@@ -1,85 +1,82 @@
 body {
-  background-color: #a5a6f6;
+     background-color: #a5a6f6;
 }
-
-#Logout {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-  font-size: 1em;
+ #Logout {
+     position: absolute;
+     top: 0px;
+     right: 15px;
+     font-size: 1em;
 }
-@media screen and (min-width: 400px) {
-  
-  .content {
-    position: absolute;
-    left: 10.5em;
-    background-color: lightgray;
-    width: 200px;
-    padding: 50px;
-    text-align: center;
-    border: 2px solid black;
-    top: 15em;
-    font-size: 1em;
-    height: 30.15em;
-  }
-  .sidebar {
-    position: absolute;
-    padding: 20px;
-    border: 2px solid black;
-    height: 20em;
-    padding: 10px;
-    top: 15em;
-    height: 35em;
-    font-size: 1em;
-  }
+ @media screen and (min-width: 400px) {
+     .content {
+         position: absolute;
+         left: 10.5em;
+         background-color: lightgray;
+         width: 200px;
+         padding: 50px;
+         text-align: center;
+         border: 2px solid black;
+         top: 15em;
+         font-size: 1em;
+         height: 30.15em;
+    }
+     .sidebar {
+         position: absolute;
+         padding: 20px;
+         border: 2px solid black;
+         height: 20em;
+         padding: 10px;
+         top: 15em;
+         height: 35em;
+         font-size: 1em;
+    }
 }
-@media screen and (min-width: 600px) {
-  
-  .content {
-    position: absolute;
-    left: 15em;
-    background-color: lightgray;
-    width: 700px;
-    padding: 50px;
-    text-align: center;
-    border: 2px solid black;
-    top: 15em;
-    font-size: 1em;
-    height: 30.15em;
-  }
-  .sidebar {
-    position: absolute;
-    padding: 20px;
-    border: 2px solid black;
-    height: 20em;
-    padding: 10px;
-    top: 15em;
-    height: 35em;
-    font-size: 1em;
-  }
+ @media screen and (min-width: 600px) {
+     .content {
+         position: absolute;
+         left: 15em;
+         background-color: lightgray;
+         width: 700px;
+         padding: 50px;
+         text-align: center;
+         border: 2px solid black;
+         top: 15em;
+         font-size: 1em;
+         height: 30.15em;
+    }
+     .sidebar {
+         position: absolute;
+         padding: 20px;
+         border: 2px solid black;
+         height: 20em;
+         padding: 10px;
+         top: 15em;
+         height: 35em;
+         font-size: 1em;
+    }
 }
-@media screen and (min-width: 768px) {
-  
-  .content {
-    position: absolute;
-    left: 15%;
-    background-color: lightgray;
-    width: 900px;
-    padding: 50px;
-    text-align: center;
-    border: 2px solid black;
-    top: 15em;
-    font-size: 1em;
-    height: 30.15em;
-  }
-  .sidebar {
-    position: absolute;
-    padding: 20px;
-    border: 2px solid black;
-    height: 25em;
-    padding: 10px;
-    top: 15em;
-    height: 50.25em;
-    font-size: 1em;
-  }
+ @media screen and (min-width: 768px) {
+     .content {
+         position: absolute;
+         left: 15%;
+         background-color: lightgray;
+         width: 900px;
+         padding: 50px;
+         text-align: center;
+         border: 2px solid black;
+         top: 15em;
+         font-size: 1em;
+         height: 30.15em;
+    }
+     .sidebar {
+         position: absolute;
+         padding: 20px;
+         border: 2px solid black;
+         height: 25em;
+         padding: 10px;
+         top: 15em;
+         height: 50.25em;
+         font-size: 1em;
+    }
 }
+ 

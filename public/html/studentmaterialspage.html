@@ -7,94 +7,58 @@
     This allows shows a student their materials needed view of a course
 -->
 <html lang="en">
- <meta charset="UTF-8" />
- <title>Materials Page</title>
- <link href="./styles/studentmaterialspage.css" rel="stylesheet" type="text/css" />
- <link rel="stylesheet" href="../../navigationbar.css" />
- <body>
-<ul id="navBar">
-    <li id="icon">
-    <a href="/StudentHomepage"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-     style="width: 75px; height: 65px"
-    />
-   </li>
-   <!-- Add link to homepage here-->
-   <li>
-    <a
-     href="/StudentHomepage"
-     >Home</a
-    >
-   </li>
-   <!-- Add link to search  here-->
-   <li>
-    <a
-     href="/SearchForClasses"
-     >Search Classes</a
-    >
-   </li>
-   <li>
-    <a
-     href="/CourseMaterials"
-     >Materials</a
-    >
-   </li>
-   <!-- Add link to login page-->
-   <li>
-    <a
-     href="/"
-     >Log Out</a
-    >
-   </li>
-  </ul>
-
-
-  <div class="sidebar">
-   <h2>Course Name</h2>
-   <br />
-   <a href="/StudentCoursePage"> Home</a>
-   <br />
-   <a
-    href="/StudentLectureSlidesPage">Lecture Slides </a
-   ><br />
-   <a
-    href="/StudentAssignmentsPage"
-   >
-    Assignments </a
-   ><br />
-   <a
-    href="/StudentOnlineLecturesPage"
-   > Online Classroom </a ><br />
-   <a
-    href="/CourseMaterials"
-   >
-    Materials </a
-   ><br />
-  </div>
-
-
-  <div class="content">
-   <h1>Materials</h1>
-   <!-- using CSS to separate these categories using CSS box models-->
-   <h2>Lecture Slide #1</h2>
-   <p>Attached Files: lectureslides1.pdf</p>
-   <p>
-    Hello and welcome to CSCI355. Our slides from today’s class are now
-    available.
-   </p>
-
-   <h2>Supplement Reading</h2>
-   <p>Attached Files: IsWaterWet.pdf</p>
-   <p>Please read the above article before our next class.</p>
-
-   <h2>Syllabus Quiz</h2>
-   <p>Attached Files: syllabus.pdf</p>
-   <p>
-    Please read the syllabus for this class. Read and understand everything then
-    take the syllabus quiz on blackboard before midnight this Sunday
-   </p>
-  </div>
- </body>
+  <meta charset="UTF-8" />
+  <title>Materials Page</title>
+  <link href="./styles/studentmaterialspage.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../navigationbar.css" />
+  <body>
+    <ul id="navBar">
+      <li id="icon">
+        <a href="/StudentHomepage"></a>
+        <img src="chalkboard_transparent.png" alt="Chalkboard" class="responsive" style="width: 75px; height: 65px" />
+      </li>
+      <!-- Add link to homepage here-->
+      <li>
+        <a href="/StudentHomepage">Home</a>
+      </li>
+      <!-- Add link to search  here-->
+      <li>
+        <a href="/SearchForClasses">Search Classes</a>
+      </li>
+      <li>
+        <a href="/CourseMaterials">Materials</a>
+      </li>
+      <!-- Add link to login page-->
+      <li>
+        <a href="/">Log Out</a>
+      </li>
+    </ul>
+    <div class="sidebar">
+      <h2>Course Name</h2>
+      <br />
+      <a href="/StudentCoursePage"> Home</a>
+      <br />
+      <a href="/StudentLectureSlidesPage">Lecture Slides </a>
+      <br />
+      <a href="/StudentAssignmentsPage"> Assignments </a>
+      <br />
+      <a href="/StudentOnlineLecturesPage"> Online Classroom </a>
+      <br />
+      <a href="/CourseMaterials"> Materials </a>
+      <br />
+    </div>
+    <div class="content">
+      <h1>Materials</h1>
+      <!-- using CSS to separate these categories using CSS box models-->
+      <h2>Lecture Slide #1</h2>
+      <p>Attached Files: lectureslides1.pdf</p>
+      <p> Hello and welcome to CSCI355. Our slides from today’s class are now available. </p>
+      <h2>Supplement Reading</h2>
+      <p>Attached Files: IsWaterWet.pdf</p>
+      <p>Please read the above article before our next class.</p>
+      <h2>Syllabus Quiz</h2>
+      <p>Attached Files: syllabus.pdf</p>
+      <p> Please read the syllabus for this class. Read and understand everything then take the syllabus quiz on blackboard before midnight this Sunday </p>
+    </div>
+  </body>
 </html>

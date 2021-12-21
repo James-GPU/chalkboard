@@ -9,47 +9,34 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<title>Login Page</title>
-</head>
-
-<body>
-	<div>
-		<a href="/"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-    />
-   </a>
-  </div>
-
-  <div class="wrapper">
-   <header>Login</header>
-   <form action="/login" method="POST">
-    <div class="field email">
-     <div class="enterEmail">
-      <input name = "user" id = "user" class="user" type="email" placeholder="JaneDoe@domain.com" required />
-      <input name = "pass" class="pass" type="password" placeholder="Password" required/>
-     </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div>
+      <a href="/">
+        <img src="chalkboard_transparent.png" alt="Chalkboard" class="responsive" />
+      </a>
     </div>
-     
-   <input id = "studentloginbtn" type="submit" value="Login as Student">
-
-    <input id = "instructorloginbtn" type="submit" value="Login as Instructor" formaction="/instruct">
-    
-   <input id = "adminloginbtn" type="submit" value="Login as Admin" formaction="/admin">
-    </form>
-
-    <a href="/ForgotUsernameAndPassword">Forgot Username or Password</a>
-    <a href="/CreateAnAccount">Create an Account</a>
-
-  </div>
-     
- <script src="./server.js"></script>
-
- </body>
+    <div class="wrapper">
+      <header>Login</header>
+      <form action="/login" method="POST">
+        <div class="field email">
+          <div class="enterEmail">
+            <input name="user" id="user" class="user" type="email" placeholder="JaneDoe@domain.com" required />
+            <input name="pass" class="pass" type="password" placeholder="Password" required />
+          </div>
+        </div>
+        <input id="studentloginbtn" type="submit" value="Login as Student">
+        <input id="instructorloginbtn" type="submit" value="Login as Instructor" formaction="/instruct">
+        <input id="adminloginbtn" type="submit" value="Login as Admin" formaction="/admin">
+      </form>
+      <a href="/ForgotUsernameAndPassword">Forgot Username or Password</a>
+      <a href="/CreateAnAccount">Create an Account</a>
+    </div>
+    <script src="./server.js"></script>
+  </body>
 </html>

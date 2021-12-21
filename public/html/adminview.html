@@ -9,38 +9,32 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin View</title>
+  <link rel="stylesheet" href="./styles/adminview.css" />
+  <link rel="stylesheet" href="./navigationbar.css" />
+ </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Admin View</title>
-	<link rel="stylesheet" href="./styles/adminview.css" />
-	<link rel="stylesheet" href="./navigationbar.css" />
-</head>
-
-<body>
-	<ul id="navBar">
-		<li id="icon">
-			<a href="/AdminView"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-     style="width: 75px; height: 65px"
-    />
+ <body>
+  <ul id="navBar">
+   <li id="icon">
+    <a href="/AdminView">
+     <img
+      src="chalkboard_transparent.png"
+      alt="Chalkboard"
+      class="responsive"
+      style="width: 75px; height: 65px"
+    /></a>
    </li>
    <!-- Add link to homepage here-->
    <li>
-    <a
-     href="/AdminView"
-     >Home</a
-    >
+    <a href="/AdminView">Home</a>
    </li>
    <!-- Add link to login page-->
    <li>
-    <a
-     href="/"
-     >Log Out</a
-    >
+    <a href="/">Log Out</a>
    </li>
   </ul>
 
@@ -86,7 +80,7 @@
   <div class="students">
    <h2>Students</h2>
 
-   <input type="submit" value="Add Student"/>
+   <input type="submit" value="Add Student" />
    <input type="submit" value="Remove Student" />
 
    <table>

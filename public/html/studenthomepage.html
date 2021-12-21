@@ -9,101 +9,70 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-  <link rel="stylesheet" href="./styles/studenthomepage.css" />
-  <link rel="stylesheet" href="./navigationbar.css" />
-  <title>Student Homepage</title>
- </head>
-
- <body>
-   <ul id="navBar">
-   <li id="icon">
-    <a href="/StudentHomepage"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-     style="width: 75px; height: 65px"
-    />
-   </li>
-   <!-- Add link to homepage here-->
-   <li>
-    <a
-     href="/StudentHomepage"
-     >Home</a
-    >
-   </li>
-   <!-- Add link to search  here-->
-   <li>
-    <a
-     href="/SearchForClasses"
-     >Search Classes</a
-    >
-   </li>
-   <li>
-    <a
-     href="/CourseMaterials"
-     >Materials</a
-    >
-   </li>
-   <!-- Add link to login page-->
-   <li>
-    <a
-     href="/"
-     >Log Out</a
-    >
-   </li>
-  </ul>
-
-  <h1 style="text-align: center">Homepage</h1>
-
-  <table>
-   <tr>
-    <th class="noBorder">
-     <form
-      action="/SearchForClasses"
-     >
-      <input type="submit" value="Search for Classes" />
-     </form>
-    </th>
-
-
-    <th class="noBorder">
-     <form
-      action="/CourseMaterials"
-     >
-      <input type="submit" value="View Materials" />
-     </form>
-    </th>
-   </tr>
-  </table>
-
-  <table>
-   <tr>
-    <th>Class Number</th>
-    <th>Class Name</th>
-   </tr>
-   <tr>
-    <td>
-     <a
-      href="/StudentCoursePage"
-      >CSCI355</a
-     >
-    </td>
-
-    <td>Web Technologies</td>
-   </tr>
-   <tr>
-    <td>CS340</td>
-    <td>OS</td>
-   </tr>
-   <tr>
-    <td>CS370</td>
-    <td>Software Engineering</td>
-   </tr>
-  </table>
-   <script src = "./script/SearchforClasses.js"
- </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/studenthomepage.css" />
+    <link rel="stylesheet" href="./navigationbar.css" />
+    <title>Student Homepage</title>
+  </head>
+  <body>
+    <ul id="navBar">
+      <li id="icon">
+        <a href="/StudentHomepage"></a>
+        <img src="chalkboard_transparent.png" alt="Chalkboard" class="responsive" style="width: 75px; height: 65px" />
+      </li>
+      <!-- Add link to homepage here-->
+      <li>
+        <a href="/StudentHomepage">Home</a>
+      </li>
+      <!-- Add link to search  here-->
+      <li>
+        <a href="/SearchForClasses">Search Classes</a>
+      </li>
+      <li>
+        <a href="/CourseMaterials">Materials</a>
+      </li>
+      <!-- Add link to login page-->
+      <li>
+        <a href="/">Log Out</a>
+      </li>
+    </ul>
+    <h1 style="text-align: center">Homepage</h1>
+    <table>
+      <tr>
+        <th class="noBorder">
+          <form action="/SearchForClasses">
+            <input type="submit" value="Search for Classes" />
+          </form>
+        </th>
+        <th class="noBorder">
+          <form action="/CourseMaterials">
+            <input type="submit" value="View Materials" />
+          </form>
+        </th>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Class Number</th>
+        <th>Class Name</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="/StudentCoursePage">CSCI355</a>
+        </td>
+        <td>Web Technologies</td>
+      </tr>
+      <tr>
+        <td>CS340</td>
+        <td>OS</td>
+      </tr>
+      <tr>
+        <td>CS370</td>
+        <td>Software Engineering</td>
+      </tr>
+    </table>
+    <script src="./script/searchforclasses.js"></script>
+  </body>
 </html>

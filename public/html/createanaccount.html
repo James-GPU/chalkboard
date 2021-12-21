@@ -26,7 +26,7 @@
      alt="Chalkboard"
      class="responsive"
      style="width: 75px; height: 65px"
-    />
+    /></a>
    </li>
 <!-- Add link to homepage here-->
     <li><a href="/StudentHomepage">Home</a></li>
@@ -36,7 +36,7 @@
   </ul>
 
   <h1 style=text-align:center>Create an Account</h1>
-  <form>
+  <form action="/createStudent" method= "POST">
     <table>
       <tr>
         <td>Name:</td>
@@ -46,78 +46,30 @@
       </tr>
       <tr>
         <td>Phone Number:</td>
-        <td><input type="tel" placeholder="###-###-####" required></td>
+        <td><input name = "phone" id = "phone" type="tel" placeholder="###-###-####" required></td>
       </tr>
       <tr>
         <td>Email:</td>
         <td>
-          <input type="email" placeholder="youremail@domain.com" required>
+          <input name = "email" id = "email" type="email" placeholder="youremail@domain.com" required>
         </td>
       </tr>
       <tr>
         <td>Password:</td>
         <td>
-          <input type="password" placeholder="Password" required>
+          <input name = "pass" id = "pass" type="password" placeholder="Password" required>
         </td>
       </tr>
       <tr>
         <td>Confirm Password:</td>
         <td>
-          <input type="password" placeholder="Confirm Password" required>
+          <input name = "check" id = "check" type="password" placeholder="Confirm Password" required>
         </td>
       </tr>
       <tr>
         <td>Date of Birth:</td>
         <td>
-          <input type="date" required>
-        </td>
-      </tr>
-      <tr>
-        <td>Security Question #1</td>
-        <td>
-          <select>
-            <option>What is your mother's maiden name?</option>
-			<option>What is your mother's maiddle name?</option>
-            <option>What is your father's middle name?</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Answer:</td>
-        <td>
-          <input type="text" required>
-        </td>
-      </tr>
-      <tr>
-        <td>Security Question #2</td>
-        <td>
-          <select>
-            <option>What is your favortie color?</option>
-            <option>What city were you born in?</option>
-            <option>What city do your grandparent live in?</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Answer:</td>
-        <td>
-          <input type="text" required>
-        </td>
-      </tr>
-      <tr>
-        <td>Security Question #3</td>
-        <td>
-          <select>
-            <option>What is the name of your first pet?</option>
-            <option>What highschool did you go to?</option>
-            <option>What is your favortie food?</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Answer:</td>
-        <td>
-          <input type="text" required>
+          <input name = "date" id = "date" type="date" required>
         </td>
       </tr>
       <tr>
@@ -130,10 +82,9 @@
       </tr>
       <tr>
         <td>
-          <input type="submit" value="Submit">
-          <input type="submit" value="Clear">
+            <input formaction="/createStudent" type="submit" value="Submit">
+          <input formaction = "/" type="submit" value="Clear">
         </td>
-      <!--</tr>-->
     </table>
   </form>
 </body>

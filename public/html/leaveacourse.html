@@ -7,58 +7,41 @@
     This allows instructors to leave a course if they are not a part of it anymore
 -->
 <html lang="en">
- <meta charset="UTF-8" />
- <title>Leave a Course</title>
- <link href="./styles/leaveacourse.css" rel="stylesheet" type="text/css" />
- <link rel="stylesheet" href="../navigationbar.css" />
-
- <body>
-  	   <ul id="navBar">
-    <li id="icon">
-    <a href="/StudentHomepage"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-     style="width: 75px; height: 65px"
-    />
-   </li>
-   <!-- Add link to homepage here-->
-   <li>
-    <a
-     href="/StudentHomepage"
-     >Home</a
-    >
-   </li>
-   <!-- Add link to search  here-->
-   <li>
-    <a
-     href="/SearchForClasses"
-     >Search Classes</a
-    >
-   </li>
-   <li>
-    <a
-     href="/CourseMaterials"
-     >Materials</a
-    >
-   </li>
-   <!-- Add link to login page-->
-   <li>
-    <a
-     href="/"
-     >Log Out</a
-    >
-   </li>
-  </ul>
-  
-  <h2>Leave a course</h2>
-  <form>
-   <label>Course Name:</label>
-   <input id="CourseName" type="text" /> <br />
-   <label>Course Number:</label>
-   <input id="CourseNumber" type="text" /><br />
-
-   <input id="confirmbtn" type="button" value="Confirm" />
-  </form>
- </body>
+  <meta charset="UTF-8" />
+  <title>Leave a Course</title>
+  <link href="./styles/leaveacourse.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../navigationbar.css" />
+  <body>
+    <ul id="navBar">
+      <li id="icon">
+        <a href="/StudentHomepage"></a>
+        <img src="chalkboard_transparent.png" alt="Chalkboard" class="responsive" style="width: 75px; height: 65px" />
+      </li>
+      <!-- Add link to homepage here-->
+      <li>
+        <a href="/StudentHomepage">Home</a>
+      </li>
+      <!-- Add link to search  here-->
+      <li>
+        <a href="/SearchForClasses">Search Classes</a>
+      </li>
+      <li>
+        <a href="/CourseMaterials">Materials</a>
+      </li>
+      <!-- Add link to login page-->
+      <li>
+        <a href="/">Log Out</a>
+      </li>
+    </ul>
+    <h2>Leave a course</h2>
+    <form>
+      <label>Course Name:</label>
+      <input id="CourseName" type="text" />
+      <br />
+      <label>Course Number:</label>
+      <input id="CourseNumber" type="text" />
+      <br />
+      <input id="confirmbtn" type="button" value="Confirm" />
+    </form>
+  </body>
 </html>

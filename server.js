@@ -35,9 +35,19 @@ db.getConnection((err) => {
  console.log("MySQL connected");
 });
 
-//works if sendFile is not present after the first time
-//inserts into database
-
+//inserts into database via POST
+app.post("/createStudent", function(req, res) {//when sent a post message,  the following will start
+let email = JSON.parse(JSON.stringify(req.body.email));
+let pass = JSON.parse(JSON.stringify(req.body.pass));
+  //code to get the password and username from db
+db.query(`INSERT INTO student (username,password) VALUES (${mysql.escape(email)},${mysql.escape(pass)})`,(err)=>{
+  if(err){
+    throw err;
+    return;
+  }
+})
+  res.redirect("/");
+});
 app.post("/login", function(req, res) {//when sent a post message,  the following will start
 let user = JSON.parse(JSON.stringify(req.body.user));
 let pass = JSON.parse(JSON.stringify(req.body.pass));
@@ -82,7 +92,6 @@ if(compare == null || compare.length == 0) {
     } 
   });
 });
-
 //Admin Login
 app.post("/admin", function(req, res) {//when sent a post message,  the following will start
 let user = JSON.parse(JSON.stringify(req.body.user));
@@ -104,7 +113,6 @@ if(compare == null || compare.length == 0) {
     } 
   });
 });
-
 app.get("/AdminView", function(req, res) {
   res.sendFile(__dirname + "/public/html/adminview.html");
 });
@@ -183,21 +191,7 @@ app.get("/StudentOnlineLecturesPage", function(req, res) {
 app.get("/StudentRoster", function(req, res) {
   res.sendFile(__dirname + "/public/html/studentroster.html");
 });
-
-
-app.get("/dashboard", function(req, res){
-  // probaly use JWT, can also look into passport or bcrypt
-  // if (user is verified) { 
-  //    continue to dashboard;
-  // }
-  // else {
-  //    redirect to login;
-  // }
-});
-
 app.listen(PORT, function(err){
     if (err) console.log(err);
     console.log("Server listening on PORT", PORT);
 });
-//ps aux | grep node
-//kill -9 PID

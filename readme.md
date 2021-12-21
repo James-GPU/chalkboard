@@ -1,5 +1,5 @@
 <ol> 
-  <li> The link to where your app can be found live:
+  <li> The link to where your app can be found live: </li>
   
 [Live Server](https://Final-Chalkboard.ashleysi.repl.co)
 
@@ -23,10 +23,9 @@ Contributions:
 </ol>
 James Ng
 <ul>
-  Roles:
   <li>Adobe Photoshop Illustrator</li>
   <li>Database Manager</li>
-  <li>Backend Manager</li>
+  <li>Express Manager</li>
   <li>Documentation Specialist</li>
   <li>Team Meeting Facilitator</li>
 </ul>
@@ -35,10 +34,11 @@ Contributions:
   <li>I implemented the database and connected the database to replit</li>
   <li>I image-edited the logo for Chalkboard</li>
   <li>I created the template for the current markdown file</li>
+  <li>I managed the routing from Express</li>
 
 </ol>
 
-<li> List of Features
+ List of Features
 
 [Admin View](https://final-chalkboard.ashleysi.repl.co/AdminView)
 
@@ -96,11 +96,11 @@ Contributions:
   
 [Student Roster](https://final-chalkboard.ashleysi.repl.co/StudentRoster)
 
-<li> Choice of front-end / client-side technologies is 
+<li> Choice of front-end / client-side technologies is </li>
 
 [Replit](https://replit.com/@ashleysi/Final-Chalkboard)
 
-<li> Choice of back-end / server-side technologies 
+<li> Choice of back-end / server-side technologies </li>
 
 [Node.js](https://nodejs.org/en/)
 
@@ -108,11 +108,11 @@ Contributions:
 
 [Express](https://expressjs.com/)
 
-<li> Choice of database management system
+<li> Choice of database management system</li>
 
 [MySQL](https://www.mysql.com/)
 
-<li> Sitemap and WireFrame
+<li> Sitemap and WireFrame</li>
 
 [Sitemap](https://github.com/James-GPU/chalkboard/blob/master/Sitemap%20and%20Wireframe/Sitemap/James'%20Sitemap/Sitemap.png)
 

@@ -1,81 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /* * selects every element on the page*/
-*{ 
-  font-family: "Open Sans";
+* {
+ font-family: "Open Sans";
 }
-
 .responsive {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-
+ width: 100%;
+ max-width: 400px;
+ height: auto;
 }
-
-body{
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background:#a5a6f6;
+body {
+ width: 100vw;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+ background: #a5a6f6;
 }
-
-.bold{
-	font-weight: bold;
+.bold {
+ font-weight: bold;
 }
-
-input{
-  background: #FFFFFF;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 18px;
-  caret-color: #a5a6f6;
-  /*curved edges*/
-  border-radius: 10px;
-  border: 2px solid #bfbfbf;
-  border-bottom-width: 2px;
+input {
+ background: #ffffff;
+ width: 100%;
+ height: 100%;
+ outline: none;
+ font-size: 18px;
+ caret-color: #a5a6f6;
+ /*curved edges*/
+ border-radius: 10px;
+ border: 2px solid #bfbfbf;
+ border-bottom-width: 2px;
 }
-
-a{
-  color: #865BE4;
-  /*Put none so the underline*/
-  text-decoration: none;
+a {
+ color: #865be4;
+ /*Put none so the underline*/
+ text-decoration: none;
 }
-
-a:hover{
-  color: #2F1833;
+a:hover {
+ color: #2f1833;
 }
-
 /*Design the Login button*/
-input[type="submit"]{
-  height: 40px;
-  /*distance between top of login button and password box*/
-  margin-top: 15px;
-  color:a5a6f6;
-  border: none;
-  background: #FFFFFF;
-  cursor: pointer;
-   display: flex; 
-  
+input[type="submit"] {
+ height: 40px;
+ /*distance between top of login button and password box*/
+ margin-top: 15px;
+ color: #a5a6f6;
+ border: none;
+ background: #ffffff;
+ cursor: pointer;
+ display: flex;
 }
 /*hover over login button and make the light purple turn dark*/
-input[type="submit"]:hover{
-  background: #6604FF;
+input[type="submit"]:hover {
+ background: #6604ff;
 }
-
-
-@media screen and (max-width:200px){
-	/*once screen is less than 749 pixels wide, change font size*/
-	a{
-		font-size: 20px;
-		margin: 30px;	
-	} 
-	
-	body{
-		width: 20vw;
-		height: 20vh;
-		position: absolute;
-	}
-  
-
+@media screen and (max-width: 200px) {
+ /*once screen is less than 749 pixels wide, change font size*/
+ a {
+  font-size: 20px;
+  margin: 30px;
+ }
+ body {
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+ }
 }

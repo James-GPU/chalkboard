@@ -9,59 +9,49 @@
 <html lang="en">
  <meta charset="UTF-8" />
  <title>Instructor Assignment Page</title>
- <link href="./styles/instructorassignmentsxpage" rel="stylesheet" type="text/css" />
+ <link
+  href="./styles/instructorassignmentsxpage"
+  rel="stylesheet"
+  type="text/css"
+ />
  <link rel="stylesheet" href="../../navigationbar.css" />
-
  <body>
   <ul id="navBar">
-    <li id="icon">
-    <a href="/InstructorHomePage"><img
-     src="chalkboard_transparent.png"
-     alt="Chalkboard"
-     class="responsive"
-     style="width: 75px; height: 65px"
-    />
+   <li id="icon">
+    <a href="/InstructorHomePage">
+     <img
+      src="chalkboard_transparent.png"
+      alt="Chalkboard"
+      class="responsive"
+      style="width: 75px; height: 65px"
+     />
+    </a>
    </li>
    <!-- Add link to homepage here-->
    <li>
-    <a
-     href="/InstructorHomePage"
-     >Home</a
-    >
+    <a href="/InstructorHomePage">Home</a>
    </li>
    <!-- Add link to login page-->
    <li>
-    <a
-     href="/"
-     >Log Out</a
-    >
+    <a href="/">Log Out</a>
    </li>
   </ul>
   <div class="content">
-     <div class="sidebar">
-   <h2>CS355</h2>
-   <br />
-   <a href="/InstructorCoursePage"> Home</a>
-   <br />
-   <a
-    href="/InstructorLectureSlidesPage">Lecture Slides </a
-   ><br />
-   <a
-    href="/InstructorAssignmentsPage"
-   >
-    Assignments </a
-   ><br />
-   <a
-    href="/InstructorOnlineLecturesPage"
-   > Online Classroom </a ><br />
-   <a
-    href="/InstructorMaterialsPage"
-   >
-    Materials </a
-   ><br />
-   <p>+ Add New Page</p>
-  </div>
-
+   <div class="sidebar">
+    <h2>CS355</h2>
+    <br />
+    <a href="/InstructorCoursePage"> Home</a>
+    <br />
+    <a href="/InstructorLectureSlidesPage">Lecture Slides </a>
+    <br />
+    <a href="/InstructorAssignmentsPage"> Assignments </a>
+    <br />
+    <a href="/InstructorOnlineLecturesPage"> Online Classroom </a>
+    <br />
+    <a href="/InstructorMaterialsPage"> Materials </a>
+    <br />
+    <p>+ Add New Page</p>
+   </div>
    <div class="Assignment">
     <!--
        This is for Assignments in a different container
@@ -73,16 +63,12 @@
      <p>Grade: / 100</p>
      <p>Due Date: 11/19/21</p>
      <div class="browse">
-      <input
-       id="browsefile"
-       type="file"
-       value="Browse file"
-      /><br />
-       <!--Creates a browse file-->
+      <input id="browsefile" type="file" />
+      <br />
+      <!--Creates a browse file-->
      </div>
-     <label>Comments:</label
-     ><!--Creates a comment box-->
-
+     <label>Comments:</label>
+     <!--Creates a comment box-->
      <div class="submitarea">
       <textarea
        id="commenttext"
@@ -92,14 +78,19 @@
       ></textarea>
      </div>
      <div class="buttons">
-      <input formaction="/InstructorAssignmentsXPage" id="submitbtn" type="button" value="Submit" />
+      <input
+       formaction="/InstructorAssignmentsXPage"
+       id="submitbtn"
+       type="submit"
+       value="Submit"
+      />
      </div>
     </div>
-
     <div class="rubric">
      <p>Rubric:</p>
      <a href="">Link to Rubric</a>
-     <br /><!--Creates a link to rubric file-->
+     <br />
+     <!--Creates a link to rubric file-->
     </div>
    </div>
   </div>
