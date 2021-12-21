@@ -32,24 +32,24 @@
 }
 /*Forgot password and signup button*/
  a{
-     color: #865BE4;
+     color: #865be4;
      text-decoration: none;
 }
  a:hover{
-     color: #2F1833;
+     color: #2f1833;
 }
  input[type="submit"]{
      height: 40px;
      margin-top: 15px;
      color: #a5a6f6;
      border: none;
-     background: #FFFFFF;
+     background: #ffffff;
      cursor: pointer;
      text-align: center;
 }
 /*hover over button and make the light purple turn dark*/
  input[type="submit"]:hover{
-     background: #6604FF;
+     background: #6604ff;
 }
  @media screen and (max-width:200px){
      a{

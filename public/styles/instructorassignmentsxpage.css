@@ -107,6 +107,11 @@ body {
   font-size: 1em;
   line-height: 1.2em;
  }
+  .comment{
+    position:absolute;
+    top:11em;
+    right:3em;
+  }
  .Assignment {
   position: absolute;
   left: 15em;
@@ -138,17 +143,17 @@ body {
   position: absolute;
   left: -2em;
   width: 20em;
-  top: 15em;
+  top: 20em;
  }
  .buttons {
   position: absolute;
   top: 17em;
-  left: 6em;
+  left: 4em;
  }
  .browse {
   position: absolute;
-  right: -10em;
-  top: 9em;
+  right: -3.5em;
+  top: 8.5em;
  }
  .topAssign {
   position: absolute;

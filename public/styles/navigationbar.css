@@ -17,7 +17,7 @@
      top:-15px;
 }
  #navBar {
-     background-color: #006A80;
+     background-color: #006a80;
      text-align: center;
      margin: 0;
      padding-left: 0;
@@ -29,10 +29,10 @@
      font-size: 1.5em;
 }
  #navBar a{
-     color: #865BE4;
+     color: #865be4;
     /*Put none so the underline*/
      text-decoration: none;
 }
  #navBar a:hover{
-     color: #2F1833;
+     color: #2f1833;
 }

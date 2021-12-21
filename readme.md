@@ -100,6 +100,10 @@ Contributions:
 
 [Replit](https://replit.com/@ashleysi/Final-Chalkboard)
 
+[Emailjs](https://www.emailjs.com/)
+
+[SweetAlert](https://sweetalert.js.org/)
+
 <li> Choice of back-end / server-side technologies </li>
 
 [Node.js](https://nodejs.org/en/)
@@ -118,4 +122,5 @@ Contributions:
 
 [Wireframe](https://github.com/James-GPU/chalkboard/tree/master/Sitemap%20and%20Wireframe/Wireframe)
 
+We have come to the decision that some features can be grouped up together, so we combined buttons together, changed how they look, added a navigation bar,
 </ol>

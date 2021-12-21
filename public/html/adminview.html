@@ -16,12 +16,11 @@
   <link rel="stylesheet" href="./styles/adminview.css" />
   <link rel="stylesheet" href="./navigationbar.css" />
  </head>
-
  <body>
   <ul id="navBar">
    <li id="icon">
-    <a href="/AdminView">
-     <img
+    <a href="/adminview"
+     ><img
       src="chalkboard_transparent.png"
       alt="Chalkboard"
       class="responsive"
@@ -41,10 +40,9 @@
   <h2 style="text-align: center">Admin View</h2>
   <div class="courses">
    <h2>Courses</h2>
-
-   <input type="submit" value="Add Course" />
-   <input type="submit" value="Remove Course" />
-
+    <form action ="/crud">
+      <input type="submit" value="Edit Course" />
+    </form>
    <table>
     <tr>
      <th>Name</th>
@@ -53,7 +51,6 @@
      <th>Instructor</th>
      <th>Class Capacity</th>
      <th>Current Enrollment</th>
-     <th>Roster</th>
     </tr>
     <tr>
      <td>Web Tech</td>
@@ -63,7 +60,6 @@
      <td>30</td>
      <td>22</td>
      <!-- Add Link to roster here-->
-     <td>View</td>
     </tr>
     <tr>
      <td>College Writing</td>
@@ -72,16 +68,15 @@
      <td>William Shakespeare</td>
      <td>15</td>
      <td>10</td>
-     <td>View</td>
     </tr>
    </table>
   </div>
 
   <div class="students">
    <h2>Students</h2>
-
-   <input type="submit" value="Add Student" />
-   <input type="submit" value="Remove Student" />
+    <form action = "/StudentRoster">
+      <input type ="submit" value = "View Student Roster"/>
+    </form>
 
    <table>
     <tr>
@@ -107,13 +102,11 @@
     </tr>
    </table>
   </div>
-
   <div class="instructors">
    <h2>Instructors</h2>
-
-   <input type="submit" value="Add Instructor" />
-   <input type="submit" value="Remove Instructor" />
-
+  <form action ="/crud">
+      <input type="submit" value="Edit Instructor" />
+    </form>
    <table>
     <tr>
      <th>First Name</th>

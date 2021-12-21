@@ -36,6 +36,6 @@
 }
 /*hover over the button and make the light purple turn dark*/
  body input[type="submit"]:hover{
-     background: #6604FF;
+     background: #6604ff;
 }
  
